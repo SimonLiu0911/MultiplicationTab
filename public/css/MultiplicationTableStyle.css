@@ -1,0 +1,7 @@
+.body {
+  color: blue;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transform: rotate(120feg);
+      -ms-transform: rotate(120feg);
+          transform: rotate(120feg); }
