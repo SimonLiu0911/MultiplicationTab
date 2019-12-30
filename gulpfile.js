@@ -23,7 +23,7 @@ gulp.task('jade', function () {
 // sass
 gulp.task('sass', function () {
     var plugins = [
-        autoprefixer({ overrideBrowserslist: ['last 3 version'] }),
+        autoprefixer({ overrideBrowserslist: ['last 1 version'] }),
     ];
     return gulp.src('./source/scss/**/*.scss')
         .pipe(plumber())

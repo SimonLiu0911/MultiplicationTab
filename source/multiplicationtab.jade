@@ -2,8 +2,35 @@
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Multiplication Tab
+        link(rel="stylesheet" href="css/MultiplicationTableStyle.css")
     body
-    h1 s
+        .wrap
+            .title
+                .border.border-top
+                    //- span.cross x
+                    //- hr.line
+                    //- span.cross x
+                    span x
+                    hr
+                    span x
+
+                h1.maintitle.theme 九九乘法表
+                span.secondtitle.theme MULTIPLICATION CHART
+
+                .border.border-bottom
+                    //- span.cross x
+                    //- hr.line
+                    //- span.cross x
+                    span x
+                    hr
+                    span x
+
+        footer.footer
+            .copyright Copyright © 2019 HexSchool. All rights are reserved.             
+
+
+        script(src="js/all.js")
+

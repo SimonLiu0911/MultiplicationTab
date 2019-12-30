@@ -1,7 +1,263 @@
-$primary-color: blue;
+// css reset
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-.body{
-    color: $primary-color;
-    filter: blur(3px);
-    transform: rotate(120feg);
+// css steart
+// variation
+$primary: #2eb738;
+$secondary: #d8d8d8;
+$basecolor: #f0f0f0;
+$white: #ffffff;
+
+// css
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: $basecolor;
+  padding: 60px 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// title
+.title {
+  height: 366px;
+  width: 350px;
+  margin: 20px 15px;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.border {
+  display: flex;
+  justify-content: center; //important
+  align-items: center; //important
+  height: 28px;
+  span {
+    font-size: 24px;
+    color: $primary;
+  }
+  hr {
+    width: 280px;
+    border: 1px solid $primary;
+    margin: 0px 21px;
+  }
+}
+
+.border-top {
+  margin-bottom: 102px;
+}
+
+.border-bottom {
+  margin-top: 102px;
+}
+
+// .line {
+//   width: 280px;
+//   border: 1px solid $primary;
+//   margin: 0px 21px;
+//   // padding: 0;
+// }
+
+// .cross {
+//   font-size: 24px;
+//   // line-height: 24px;
+//   // padding: 0;
+//   // margin: 0;
+//   color: $primary;
+// }
+
+.maintitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 56px;
+  line-height: 78px;
+  padding: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.secondtitle {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.theme {
+  margin: 0 30px;
+  color: $primary;
+}
+
+// card
+.card {
+  width: 270px;
+  height: 251px;
+  background-color: $white;
+  border-radius: 100px 0 30px 0;
+  box-shadow: 0 3px 10px $secondary; //horizontal, vertical, blur, color
+  margin: 20px 15px;
+  display: flex; //important
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $primary;
+  padding: 60px 40px;
+}
+// 設定成flex佈局後，子元素的float, clear, vertical-align屬性將會失效
+// https://www.jianshu.com/p/d9373a86b748/
+
+.number {
+  width: 105px;
+  line-height: 123px;  //important
+  color: $primary;
+  font-weight: bold;
+  font-size: 128px;
+  font-family: Helvetica Neue;
+  text-shadow: 2px 2px 2px $basecolor;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+
+.formula{
+  width: 105px;
+  height: 33px;
+  font-size: 24px;
+  // line-height: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 40px 8px 7px;
+  // margin: 4px 0;
+}
+
+// footer
+.footer{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: $primary;
 }
