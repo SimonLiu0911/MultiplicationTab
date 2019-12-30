@@ -140,9 +140,11 @@ $white: #ffffff;
   max-width: 1280px;
   margin: 0 auto;
   background-color: $basecolor;
-  padding: 60px 70px;
+  padding: 60px 70px; 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 // title
@@ -252,6 +254,7 @@ $white: #ffffff;
   align-items: center;
   margin: 0 40px 8px 7px;
   // margin: 4px 0;
+  padding-left: 40ps;
 }
 
 // footer

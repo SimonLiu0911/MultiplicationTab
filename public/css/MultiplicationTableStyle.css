@@ -132,7 +132,9 @@ table {
   background-color: #f0f0f0;
   padding: 60px 70px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
 .title {
   height: 366px;
@@ -203,7 +205,8 @@ table {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 40px 8px 7px; }
+  margin: 0 40px 8px 7px;
+  padding-left: 40ps; }
 
 .footer {
   padding: 20px;
